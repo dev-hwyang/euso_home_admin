@@ -9,13 +9,181 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff; /* 여기가 전체배결부분 */
+    --foreground: #0a0a0a;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  .show_750 {
+    display: none;
+  }
+
+  @media (min-width: 750px) {
+    .show_750 {
+      display: block;
+    }
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox  */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  .bg-hover-animation {
+    background-color: #423a7c;
+    background-size: cover;
+  }
+
+  .gradient_button:hover {
+    background: transparent linear-gradient(270deg, #02226f 0%, #47009b 100%) 0%
+      0% no-repeat padding-box;
+    box-shadow: 0 10px 10px #002eb12e;
+  }
+
+  .tabs {
+    display: flex;
+    border-bottom: 2px solid #505050;
+    margin-bottom: 10px;
+  }
+  .tabs button {
+    padding: 10px 20px;
+    border-bottom: none;
+    background: #acacac;
+    flex: 1;
+    text-align: center;
+  }
+  .tabs button:hover {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: none;
+    background: #c8c8c8;
+    color: #03009b;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+  }
+  .tabs button.active {
+    background: #e4e4e4;
+    font-weight: bold;
+    color: #03009b;
+    /* border-top: 2px solid #007bff; */
+  }
+  .tab-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    width: 600px; /* 팝업 너비 지정 */
+  }
+
+  .modal button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  .modal button:hover {
+    border: #4caf50;
+    background-color: #70a872;
+    color: #000000;
+  }
+
+  .modal button[type="button"] {
+    background-color: #f44336;
+  }
+  .modal button[type="button"]:hover {
+    border: #f73022;
+    background-color: #fa6d63;
+    color: #000000;
+  }
+  .table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .table button {
+    padding: 5px 10px;
+    border: none;
+    border: #f73022;
+    background-color: #f44336;
+    color: #ffffff;
+  }
+  .table button:hover {
+    border: none;
+    border: #f73022;
+    background-color: #fa6d63;
+    color: #000000;
+  }
+
+  .table thead {
+    font-weight: bold;
+    text-align: center;
+    background: #d8d8d8;
+  }
+  .table td {
+    border: 1px solid #000000;
+    padding: 10px;
+  }
+  .table tbody tr:hover {
+    border: 1px solid #000000;
+    background-color: #dfdfdf;
+  }
+
+  .instBtn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border: #000000;
+    background-color: #4caf50;
+    color: white;
+  }
+  .instBtn:hover {
+    border: #4caf50;
+    background-color: #70a872;
+    color: #000000;
+  }
+
+  input {
+    border: 1px solid #969696; /* 기본 테두리 스타일과 두께 설정 */
+    width: 70%;
+  }
+
+  input:focus {
+    border-color: rgb(122, 122, 122); /* 포커스 시 파란색 테두리 */
+    outline: none; /* 포커스시 기본적으로 생기는 outline을 없애기 */
+  }
+
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .main {
+    border: 3px solid #969696;
+    padding: 20px;
+  }
+
+  .title {
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
 }
