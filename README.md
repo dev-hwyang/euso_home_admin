@@ -35,8 +35,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-경로가 그곳이 맞는지 확인하기
-npm install
-진행 후
-npm run dev
-할것!
+mariadb-version 15
+
+nextjs - v15.1.7
